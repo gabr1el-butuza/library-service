@@ -1,0 +1,684 @@
+2019-03-13 11:19:59.563   INFO 1284 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 1284 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:19:59.594   INFO 1284 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:19:59.828   INFO 1284 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78aab498: startup date [Wed Mar 13 11:19:59 EET 2019]; root of context hierarchy
+2019-03-13 11:20:04.547   INFO 1284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d1e7b8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:20:05.625   INFO 1284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:20:05.734   INFO 1284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:20:05.734   INFO 1284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:20:05.750   INFO 1284 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:20:06.113   INFO 1284 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:20:06.113   INFO 1284 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6285 ms
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:20:06.800   INFO 1284 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:20:07.238   INFO 1284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:20:07.738   INFO 1284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:20:07.816   INFO 1284 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 11:20:07.847   INFO 1284 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 11:20:08.191   WARN 1284 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+2019-03-13 11:20:08.191   INFO 1284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-13 11:20:08.222   INFO 1284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-13 11:20:08.222   INFO 1284 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-13 11:20:08.285   INFO 1284 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-13 11:20:08.300  ERROR 1284 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.library.service.LibraryServiceServer.main(LibraryServiceServer.java:12) [classes/:na]
+Caused by: org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.checkForIncompatibilities(CompositeMigrationResolver.java:141) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.doFindAvailableMigrations(CompositeMigrationResolver.java:107) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:90) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:43) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.info.MigrationInfoServiceImpl.refresh(MigrationInfoServiceImpl.java:114) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:164) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:157) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.TransactionTemplate.execute(TransactionTemplate.java:75) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate.validate(DbValidate.java:157) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1280) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:71) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1176) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1168) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1655) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168) ~[flyway-core-5.0.7.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 18 common frames omitted
+
+2019-03-13 11:21:20.175   INFO 11812 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 11812 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:21:20.190   INFO 11812 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:21:20.331   INFO 11812 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4032d386: startup date [Wed Mar 13 11:21:20 EET 2019]; root of context hierarchy
+2019-03-13 11:21:23.659   INFO 11812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$349e8461] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:21:24.487   INFO 11812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:21:24.565   INFO 11812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:21:24.565   INFO 11812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:21:24.596   INFO 11812 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:21:24.815   INFO 11812 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:21:24.830   INFO 11812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4499 ms
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:21:25.643   INFO 11812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:21:25.830   INFO 11812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:21:26.393   INFO 11812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:21:26.502   INFO 11812 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 11:21:26.518   INFO 11812 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 11:21:26.783   WARN 11812 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+2019-03-13 11:21:26.799   INFO 11812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-13 11:21:26.799   INFO 11812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-13 11:21:26.815   INFO 11812 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-13 11:21:26.846   INFO 11812 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-13 11:21:26.846  ERROR 11812 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.library.service.LibraryServiceServer.main(LibraryServiceServer.java:12) [classes/:na]
+Caused by: org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.checkForIncompatibilities(CompositeMigrationResolver.java:141) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.doFindAvailableMigrations(CompositeMigrationResolver.java:107) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:90) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:43) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.info.MigrationInfoServiceImpl.refresh(MigrationInfoServiceImpl.java:114) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:164) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:157) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.TransactionTemplate.execute(TransactionTemplate.java:75) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate.validate(DbValidate.java:157) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1280) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:71) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1176) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1168) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1655) ~[flyway-core-5.0.7.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168) ~[flyway-core-5.0.7.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 18 common frames omitted
+
+2019-03-13 11:30:50.311   INFO 11816 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 11816 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:30:50.311   INFO 11816 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:30:50.421   INFO 11816 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f0f1111: startup date [Wed Mar 13 11:30:50 EET 2019]; root of context hierarchy
+2019-03-13 11:30:53.327   INFO 11816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67c68ef0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:30:54.202   INFO 11816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:30:54.264   INFO 11816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:30:54.264   INFO 11816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:30:54.280   INFO 11816 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:30:54.530   INFO 11816 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:30:54.530   INFO 11816 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4109 ms
+2019-03-13 11:30:55.108   INFO 11816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:30:55.108   INFO 11816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:30:55.108   INFO 11816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:30:55.108   INFO 11816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:30:55.108   INFO 11816 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:30:55.108   INFO 11816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:30:55.123   INFO 11816 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:30:55.420   INFO 11816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:30:55.826   INFO 11816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:30:55.905   INFO 11816 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway 3.2 by Boxfuse
+2019-03-13 11:30:55.936   INFO 11816 --- [main] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8 (MySQL 5.5)
+2019-03-13 11:30:56.123   WARN 11816 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+2019-03-13 11:30:56.139   INFO 11816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-13 11:30:56.155   INFO 11816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-13 11:30:56.155   INFO 11816 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-13 11:30:56.201   INFO 11816 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-13 11:30:56.201  ERROR 11816 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.library.service.LibraryServiceServer.main(LibraryServiceServer.java:12) [classes/:na]
+Caused by: org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.checkForIncompatibilities(CompositeMigrationResolver.java:144) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.doFindAvailableMigrations(CompositeMigrationResolver.java:111) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:94) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:42) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.info.MigrationInfoServiceImpl.refresh(MigrationInfoServiceImpl.java:96) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.doInTransaction(DbValidate.java:136) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.doInTransaction(DbValidate.java:131) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.TransactionTemplate.execute(TransactionTemplate.java:72) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate.validate(DbValidate.java:131) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1102) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.Flyway.access$300(Flyway.java:62) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1012) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1006) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1418) ~[flyway-core-3.2.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 18 common frames omitted
+
+2019-03-13 11:36:16.022   INFO 10484 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 10484 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:36:16.037   INFO 10484 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:36:16.147   INFO 10484 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e0dec4a: startup date [Wed Mar 13 11:36:16 EET 2019]; root of context hierarchy
+2019-03-13 11:36:19.287   INFO 10484 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2aec7ec7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:36:20.053   INFO 10484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:36:20.115   INFO 10484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:36:20.115   INFO 10484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:36:20.131   INFO 10484 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:36:20.365   INFO 10484 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:36:20.365   INFO 10484 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4218 ms
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:36:20.928   INFO 10484 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:36:21.240   INFO 10484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:36:21.568   INFO 10484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:36:21.631   INFO 10484 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway 4.1.2 by Boxfuse
+2019-03-13 11:36:21.662   INFO 10484 --- [main] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8 (MySQL 5.5)
+2019-03-13 11:36:21.912   WARN 10484 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+2019-03-13 11:36:21.928   INFO 10484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-13 11:36:21.928   INFO 10484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-13 11:36:21.943   INFO 10484 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-13 11:36:21.959   INFO 10484 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-13 11:36:21.974  ERROR 10484 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.library.service.LibraryServiceServer.main(LibraryServiceServer.java:12) [classes/:na]
+Caused by: org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.checkForIncompatibilities(CompositeMigrationResolver.java:143) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.doFindAvailableMigrations(CompositeMigrationResolver.java:109) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:92) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:44) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.info.MigrationInfoServiceImpl.refresh(MigrationInfoServiceImpl.java:112) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:171) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:164) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.TransactionTemplate.execute(TransactionTemplate.java:75) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate.validate(DbValidate.java:164) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1017) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:72) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:934) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:930) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1413) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:930) ~[flyway-core-4.1.2.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 18 common frames omitted
+
+2019-03-13 11:37:46.552   INFO 11396 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 11396 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:37:46.568   INFO 11396 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:37:46.646   INFO 11396 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ffe63b9: startup date [Wed Mar 13 11:37:46 EET 2019]; root of context hierarchy
+2019-03-13 11:37:49.703   INFO 11396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b92bfdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:37:50.547   INFO 11396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:37:50.610   INFO 11396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:37:50.610   INFO 11396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:37:50.641   INFO 11396 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:37:50.875   INFO 11396 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:37:50.875   INFO 11396 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4229 ms
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:37:51.469   INFO 11396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:37:51.766   INFO 11396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:37:52.109   INFO 11396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:37:52.188   INFO 11396 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway 4.1.2 by Boxfuse
+2019-03-13 11:37:52.219   INFO 11396 --- [main] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8 (MySQL 5.5)
+2019-03-13 11:37:52.531   WARN 11396 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+2019-03-13 11:37:52.547   INFO 11396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-13 11:37:52.562   INFO 11396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-13 11:37:52.562   INFO 11396 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-13 11:37:52.594   INFO 11396 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-13 11:37:52.594  ERROR 11396 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.library.service.LibraryServiceServer.main(LibraryServiceServer.java:12) [classes/:na]
+Caused by: org.flywaydb.core.api.FlywayException: Found more than one migration with version 1.0.0.1
+Offenders:
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_book_table.sql (SQL)
+-> C:\Users\Gabi\Desktop\library-service\target\classes\db\migration\V1.0.0\V1.0.0_1__create_pizza_table.sql (SQL)
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.checkForIncompatibilities(CompositeMigrationResolver.java:143) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.doFindAvailableMigrations(CompositeMigrationResolver.java:109) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:92) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.resolver.CompositeMigrationResolver.resolveMigrations(CompositeMigrationResolver.java:44) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.info.MigrationInfoServiceImpl.refresh(MigrationInfoServiceImpl.java:112) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:171) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate$2.call(DbValidate.java:164) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.TransactionTemplate.execute(TransactionTemplate.java:75) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.internal.command.DbValidate.validate(DbValidate.java:164) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1017) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:72) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:934) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:930) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1413) ~[flyway-core-4.1.2.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:930) ~[flyway-core-4.1.2.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1765) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 18 common frames omitted
+
+2019-03-13 11:55:13.681   INFO 9004 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 9004 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:55:13.681   INFO 9004 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:55:13.838   INFO 9004 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60d8c9b7: startup date [Wed Mar 13 11:55:13 EET 2019]; root of context hierarchy
+2019-03-13 11:55:16.759   INFO 9004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$af3bdf85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:55:17.556   INFO 9004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:55:17.603   INFO 9004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:55:17.603   INFO 9004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:55:17.619   INFO 9004 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:55:17.806   INFO 9004 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:55:17.806   INFO 9004 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3968 ms
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:55:18.368   INFO 9004 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:55:18.665   INFO 9004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:55:19.009   INFO 9004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:55:19.087   INFO 9004 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 11:55:19.103   INFO 9004 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 11:55:19.243   INFO 9004 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.028s)
+2019-03-13 11:55:19.400   INFO 9004 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: `library`.`flyway_schema_history`
+2019-03-13 11:55:19.853   INFO 9004 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: << Empty Schema >>
+2019-03-13 11:55:19.853   INFO 9004 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema `library` to version 1.0.0.1 - create book table
+2019-03-13 11:55:20.134   INFO 9004 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema `library` (execution time 00:00.743s)
+2019-03-13 11:55:20.415   INFO 9004 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 11:55:20.540   INFO 9004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 11:55:20.868   INFO 9004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 11:55:20.884   INFO 9004 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 11:55:21.056   INFO 9004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 11:55:21.446   INFO 9004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 11:55:23.274   INFO 9004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 11:55:24.337   INFO 9004 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eec885fb-6f4c-4236-a74b-560032579107
+
+2019-03-13 11:55:24.634   INFO 9004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@781aff8b, org.springframework.security.web.context.SecurityContextPersistenceFilter@31834a2b, org.springframework.security.web.header.HeaderWriterFilter@dbddbe3, org.springframework.security.web.authentication.logout.LogoutFilter@4aebee4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22ead351, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7675c171, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fbf26fc, com.library.service.config.CorsFilter@132f0af2, org.springframework.security.web.session.SessionManagementFilter@256a0d95, org.springframework.security.web.access.ExceptionTranslationFilter@2c3158e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62d40e31]
+2019-03-13 11:55:24.837   INFO 9004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 11:55:25.165   INFO 9004 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60d8c9b7: startup date [Wed Mar 13 11:55:13 EET 2019]; root of context hierarchy
+2019-03-13 11:55:25.259   WARN 9004 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 11:55:25.337   INFO 9004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 11:55:25.337   INFO 9004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 11:55:25.352   INFO 9004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 11:55:25.352   INFO 9004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 11:55:25.399   INFO 9004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 11:55:25.399   INFO 9004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 11:55:25.884   INFO 9004 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 11:55:25.884   INFO 9004 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 11:55:25.884   INFO 9004 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 11:55:25.899   INFO 9004 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 11:55:25.899   INFO 9004 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 11:55:25.993   INFO 9004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 11:55:25.993   INFO 9004 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 13.202 seconds (JVM running for 14.338)
+2019-03-13 11:57:40.547   INFO 9004 --- [http-nio-0.0.0.0-9005-exec-10] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-13 11:57:40.547   INFO 9004 --- [http-nio-0.0.0.0-9005-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-13 11:57:40.578   INFO 9004 --- [http-nio-0.0.0.0-9005-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2019-03-13 11:57:40.734   INFO 9004 --- [http-nio-0.0.0.0-9005-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-13 11:59:02.337   INFO 11468 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 11468 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 11:59:02.345   INFO 11468 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 11:59:02.478   INFO 11468 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4313f5bc: startup date [Wed Mar 13 11:59:02 EET 2019]; root of context hierarchy
+2019-03-13 11:59:05.710   INFO 11468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63dc2622] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 11:59:06.473   INFO 11468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 11:59:06.520   INFO 11468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 11:59:06.520   INFO 11468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 11:59:06.551   INFO 11468 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 11:59:06.786   INFO 11468 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 11:59:06.786   INFO 11468 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4308 ms
+2019-03-13 11:59:07.351   INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 11:59:07.351   INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 11:59:07.366   INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 11:59:07.366   INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 11:59:07.366   INFO 11468 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 11:59:07.366   INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 11:59:07.366   INFO 11468 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 11:59:07.648   INFO 11468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 11:59:08.024   INFO 11468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 11:59:08.102   INFO 11468 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 11:59:08.102   INFO 11468 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 11:59:08.258   INFO 11468 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.035s)
+2019-03-13 11:59:08.305   INFO 11468 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: 1.0.0.1
+2019-03-13 11:59:08.305   INFO 11468 --- [main] o.f.core.internal.command.DbMigrate      : Schema `library` is up to date. No migration necessary.
+2019-03-13 11:59:08.402   INFO 11468 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 11:59:08.433   INFO 11468 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 11:59:08.574   INFO 11468 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 11:59:08.589   INFO 11468 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 11:59:08.652   INFO 11468 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 11:59:08.933   INFO 11468 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 11:59:09.676   INFO 11468 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 11:59:10.520   INFO 11468 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c0979859-451b-4f51-976f-d4ba6d3508db
+
+2019-03-13 11:59:10.754   INFO 11468 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5234b61a, org.springframework.security.web.context.SecurityContextPersistenceFilter@9df564f, org.springframework.security.web.header.HeaderWriterFilter@677ce519, org.springframework.security.web.authentication.logout.LogoutFilter@415795f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f0a133d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fd99443, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22a260ff, com.library.service.config.CorsFilter@3efac1b3, org.springframework.security.web.session.SessionManagementFilter@7c5df615, org.springframework.security.web.access.ExceptionTranslationFilter@3fdcde7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b8d54da]
+2019-03-13 11:59:10.910   INFO 11468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 11:59:11.238   INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4313f5bc: startup date [Wed Mar 13 11:59:02 EET 2019]; root of context hierarchy
+2019-03-13 11:59:11.317   WARN 11468 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 11:59:11.379   INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 11:59:11.379   INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 11:59:11.395   INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 11:59:11.395   INFO 11468 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 11:59:11.427   INFO 11468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 11:59:11.427   INFO 11468 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 11:59:11.850   INFO 11468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 11:59:11.850   INFO 11468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 11:59:11.850   INFO 11468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 11:59:11.850   INFO 11468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 11:59:11.866   INFO 11468 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 11:59:11.913   INFO 11468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 11:59:11.913   INFO 11468 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 10.456 seconds (JVM running for 11.53)
+2019-03-13 12:01:18.321   INFO 4652 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 4652 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 12:01:18.321   INFO 4652 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 12:01:18.446   INFO 4652 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dd6264: startup date [Wed Mar 13 12:01:18 EET 2019]; root of context hierarchy
+2019-03-13 12:01:21.458   INFO 4652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5fe75a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 12:01:22.271   INFO 4652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 12:01:22.334   INFO 4652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 12:01:22.334   INFO 4652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 12:01:22.349   INFO 4652 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 12:01:22.584   INFO 4652 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 12:01:22.584   INFO 4652 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4138 ms
+2019-03-13 12:01:23.178   INFO 4652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 12:01:23.178   INFO 4652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 12:01:23.178   INFO 4652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 12:01:23.178   INFO 4652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 12:01:23.178   INFO 4652 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 12:01:23.178   INFO 4652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 12:01:23.193   INFO 4652 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 12:01:23.460   INFO 4652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 12:01:23.864   INFO 4652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 12:01:23.942   INFO 4652 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 12:01:23.958   INFO 4652 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 12:01:24.130   INFO 4652 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.034s)
+2019-03-13 12:01:24.177   INFO 4652 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: 1.0.0.1
+2019-03-13 12:01:24.177   INFO 4652 --- [main] o.f.core.internal.command.DbMigrate      : Schema `library` is up to date. No migration necessary.
+2019-03-13 12:01:24.286   INFO 4652 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 12:01:24.333   INFO 4652 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 12:01:24.489   INFO 4652 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 12:01:24.489   INFO 4652 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 12:01:24.552   INFO 4652 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 12:01:24.770   INFO 4652 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 12:01:25.489   INFO 4652 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 12:01:26.348   INFO 4652 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 347719a3-4352-45d3-84b2-d004dd66f201
+
+2019-03-13 12:01:26.583   INFO 4652 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79957f11, org.springframework.security.web.context.SecurityContextPersistenceFilter@677ce519, org.springframework.security.web.header.HeaderWriterFilter@2415e4c7, org.springframework.security.web.authentication.logout.LogoutFilter@55e1192, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cfb0c4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f995afc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@217235f5, com.library.service.config.CorsFilter@3bc2c127, org.springframework.security.web.session.SessionManagementFilter@7302ff13, org.springframework.security.web.access.ExceptionTranslationFilter@6401188a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44e4cb76]
+2019-03-13 12:01:26.755   INFO 4652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 12:01:27.083   INFO 4652 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dd6264: startup date [Wed Mar 13 12:01:18 EET 2019]; root of context hierarchy
+2019-03-13 12:01:27.145   WARN 4652 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 12:01:27.208   INFO 4652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 12:01:27.208   INFO 4652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 12:01:27.223   INFO 4652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 12:01:27.223   INFO 4652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 12:01:27.286   INFO 4652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 12:01:27.286   INFO 4652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 12:01:27.676   INFO 4652 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 12:01:27.676   INFO 4652 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 12:01:27.676   INFO 4652 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 12:01:27.692   INFO 4652 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 12:01:27.692   INFO 4652 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 12:01:27.739   INFO 4652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 12:01:27.754   INFO 4652 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 10.296 seconds (JVM running for 11.335)
+2019-03-13 12:02:17.835   INFO 4652 --- [http-nio-0.0.0.0-9005-exec-2] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-13 12:02:17.835   INFO 4652 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-13 12:02:17.866   INFO 4652 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2019-03-13 12:02:28.655   INFO 4652 --- [http-nio-0.0.0.0-9005-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-13 12:03:01.746   INFO 1932 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 1932 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 12:03:01.746   INFO 1932 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 12:03:01.865   INFO 1932 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Wed Mar 13 12:03:01 EET 2019]; root of context hierarchy
+2019-03-13 12:03:04.835   INFO 1932 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7eb4a134] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 12:03:05.633   INFO 1932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 12:03:05.696   INFO 1932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 12:03:05.696   INFO 1932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 12:03:05.711   INFO 1932 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 12:03:05.916   INFO 1932 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 12:03:05.916   INFO 1932 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4051 ms
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 12:03:06.460   INFO 1932 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 12:03:06.773   INFO 1932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 12:03:07.117   INFO 1932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 12:03:07.179   INFO 1932 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 12:03:07.195   INFO 1932 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 12:03:07.369   INFO 1932 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.038s)
+2019-03-13 12:03:07.385   INFO 1932 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: 1.0.0.1
+2019-03-13 12:03:07.385   INFO 1932 --- [main] o.f.core.internal.command.DbMigrate      : Schema `library` is up to date. No migration necessary.
+2019-03-13 12:03:07.478   INFO 1932 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 12:03:07.525   INFO 1932 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 12:03:07.681   INFO 1932 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 12:03:07.681   INFO 1932 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 12:03:07.760   INFO 1932 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 12:03:08.022   INFO 1932 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 12:03:08.884   INFO 1932 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 12:03:09.791   INFO 1932 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2cfab575-6940-4bfe-b3fb-274b8498db81
+
+2019-03-13 12:03:10.089   INFO 1932 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cf63b9a, org.springframework.security.web.context.SecurityContextPersistenceFilter@a1691c0, org.springframework.security.web.header.HeaderWriterFilter@4f363abd, org.springframework.security.web.authentication.logout.LogoutFilter@35787726, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f995afc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@644a3add, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4776e209, com.library.service.config.CorsFilter@7b0e2d4a, org.springframework.security.web.session.SessionManagementFilter@6b63abdc, org.springframework.security.web.access.ExceptionTranslationFilter@373afd6c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78d23d6a]
+2019-03-13 12:03:10.277   INFO 1932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 12:03:10.618   INFO 1932 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Wed Mar 13 12:03:01 EET 2019]; root of context hierarchy
+2019-03-13 12:03:10.711   WARN 1932 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 12:03:10.789   INFO 1932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 12:03:10.789   INFO 1932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 12:03:10.789   INFO 1932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 12:03:10.789   INFO 1932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 12:03:10.839   INFO 1932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 12:03:10.855   INFO 1932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 12:03:11.447   INFO 1932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 12:03:11.462   INFO 1932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 12:03:11.462   INFO 1932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 12:03:11.462   INFO 1932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 12:03:11.478   INFO 1932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 12:03:11.587   INFO 1932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 12:03:11.587   INFO 1932 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 10.755 seconds (JVM running for 11.863)
+2019-03-13 15:14:13.040   INFO 7360 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 7360 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 15:14:13.056   INFO 7360 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 15:14:13.165   INFO 7360 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12e61fe6: startup date [Wed Mar 13 15:14:13 EET 2019]; root of context hierarchy
+2019-03-13 15:14:16.064   INFO 7360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28c9d412] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 15:14:16.937   INFO 7360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 15:14:17.015   INFO 7360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 15:14:17.031   INFO 7360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 15:14:17.046   INFO 7360 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 15:14:17.281   INFO 7360 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 15:14:17.281   INFO 7360 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4116 ms
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 15:14:17.921   INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 15:14:18.234   INFO 7360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 15:14:18.640   INFO 7360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 15:14:18.718   INFO 7360 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 15:14:18.734   INFO 7360 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 15:14:18.900   INFO 7360 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.038s)
+2019-03-13 15:14:18.931   INFO 7360 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: 1.0.0.1
+2019-03-13 15:14:18.931   INFO 7360 --- [main] o.f.core.internal.command.DbMigrate      : Schema `library` is up to date. No migration necessary.
+2019-03-13 15:14:19.087   INFO 7360 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 15:14:19.118   INFO 7360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 15:14:19.275   INFO 7360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 15:14:19.275   INFO 7360 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 15:14:19.337   INFO 7360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 15:14:19.540   INFO 7360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 15:14:20.399   INFO 7360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 15:14:21.397   INFO 7360 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5fefc8e1-c6f3-4dc9-924c-2d19a6a0a36c
+
+2019-03-13 15:14:21.647   INFO 7360 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4aebee4b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b37df8e, org.springframework.security.web.header.HeaderWriterFilter@521441d5, org.springframework.security.web.authentication.logout.LogoutFilter@6637a365, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b351446, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a21f43f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18d47df0, com.library.service.config.CorsFilter@d36ae0b, org.springframework.security.web.session.SessionManagementFilter@677ce519, org.springframework.security.web.access.ExceptionTranslationFilter@3daf03d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@773c2214]
+2019-03-13 15:14:21.845   INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 15:14:22.173   INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12e61fe6: startup date [Wed Mar 13 15:14:13 EET 2019]; root of context hierarchy
+2019-03-13 15:14:22.236   WARN 7360 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 15:14:22.298   INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 15:14:22.314   INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 15:14:22.314   INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 15:14:22.314   INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 15:14:22.345   INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 15:14:22.345   INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 15:14:22.829   INFO 7360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 15:14:22.829   INFO 7360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 15:14:22.829   INFO 7360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 15:14:22.829   INFO 7360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 15:14:22.829   INFO 7360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 15:14:22.892   INFO 7360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 15:14:22.892   INFO 7360 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 10.804 seconds (JVM running for 11.816)
+2019-03-13 15:14:46.139   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-2] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-13 15:14:46.139   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-13 15:14:46.179   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2019-03-13 15:14:59.145   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
