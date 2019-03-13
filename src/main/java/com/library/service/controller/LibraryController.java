@@ -6,6 +6,7 @@ import com.library.service.service.LibraryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,5 +29,11 @@ public class LibraryController implements LibraryApi {
     public ResponseEntity<List<Book>> getAllBooks() {
         List<Book> allpiz = libraryService.getAllBooks();
         return new ResponseEntity<>(allpiz, HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Boolean> removeBook(@PathVariable("id") String id){
+        libraryService.removeBook(id);
+        return new ResponseEntity(Boolean.TRUE, HttpStatus.OK);
     }
 }

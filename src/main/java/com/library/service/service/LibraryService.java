@@ -37,4 +37,6 @@ public class LibraryService {
         }
         return items;
     }
+
+    public void removeBook(String id){ libraryRepository.deleteById(id); }
 }
