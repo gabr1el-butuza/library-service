@@ -682,3 +682,245 @@ Using generated security password: 5fefc8e1-c6f3-4dc9-924c-2d19a6a0a36c
 2019-03-13 15:14:46.139   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2019-03-13 15:14:46.179   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
 2019-03-13 15:14:59.145   INFO 7360 --- [http-nio-0.0.0.0-9005-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-13 20:44:54.298   INFO 9236 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 9236 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 20:44:54.342   INFO 9236 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 20:44:54.495   INFO 9236 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d4342c2: startup date [Wed Mar 13 20:44:54 EET 2019]; root of context hierarchy
+2019-03-13 20:44:57.674   INFO 9236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$87a16990] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 20:44:58.468   INFO 9236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 20:44:58.520   INFO 9236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 20:44:58.521   INFO 9236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 20:44:58.537   INFO 9236 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 20:44:58.744   INFO 9236 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 20:44:58.744   INFO 9236 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4250 ms
+2019-03-13 20:44:59.324   INFO 9236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 20:44:59.326   INFO 9236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 20:44:59.327   INFO 9236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 20:44:59.328   INFO 9236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 20:44:59.329   INFO 9236 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 20:44:59.330   INFO 9236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 20:44:59.331   INFO 9236 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 20:44:59.645   INFO 9236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 20:45:00.057   INFO 9236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 20:45:00.139   INFO 9236 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 20:45:00.153   INFO 9236 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 20:45:00.331   INFO 9236 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.038s)
+2019-03-13 20:45:00.366   INFO 9236 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: 1.0.0.1
+2019-03-13 20:45:00.367   INFO 9236 --- [main] o.f.core.internal.command.DbMigrate      : Schema `library` is up to date. No migration necessary.
+2019-03-13 20:45:00.479   INFO 9236 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 20:45:00.517   INFO 9236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 20:45:00.676   INFO 9236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 20:45:00.679   INFO 9236 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 20:45:00.752   INFO 9236 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 20:45:01.120   INFO 9236 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 20:45:01.863   INFO 9236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 20:45:02.811   INFO 9236 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: efa4b867-e3fc-4523-9d4c-d854a8d20d9f
+
+2019-03-13 20:45:03.082   INFO 9236 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51cab489, org.springframework.security.web.context.SecurityContextPersistenceFilter@2415e4c7, org.springframework.security.web.header.HeaderWriterFilter@7c46c9c3, org.springframework.security.web.authentication.logout.LogoutFilter@241fbec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@373afd6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4017fe2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f9a10df, com.library.service.config.CorsFilter@22acb6e, org.springframework.security.web.session.SessionManagementFilter@382dc417, org.springframework.security.web.access.ExceptionTranslationFilter@53eba4b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bf03fee]
+2019-03-13 20:45:03.253   INFO 9236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 20:45:03.637   INFO 9236 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d4342c2: startup date [Wed Mar 13 20:44:54 EET 2019]; root of context hierarchy
+2019-03-13 20:45:03.732   WARN 9236 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 20:45:03.804   INFO 9236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book-delete/{id}],methods=[DELETE],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Boolean> com.library.service.controller.LibraryController.removeBook(java.lang.String)
+2019-03-13 20:45:03.807   INFO 9236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 20:45:03.810   INFO 9236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 20:45:03.819   INFO 9236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 20:45:03.821   INFO 9236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 20:45:03.870   INFO 9236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 20:45:03.871   INFO 9236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 20:45:04.242   INFO 9236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 20:45:04.243   INFO 9236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 20:45:04.244   INFO 9236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 20:45:04.252   INFO 9236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 20:45:04.254   INFO 9236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 20:45:04.327   INFO 9236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 20:45:04.331   INFO 9236 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 11.099 seconds (JVM running for 12.382)
+2019-03-13 20:46:09.861   INFO 9236 --- [http-nio-0.0.0.0-9005-exec-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-13 20:46:09.862   INFO 9236 --- [http-nio-0.0.0.0-9005-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-13 20:46:09.892   INFO 9236 --- [http-nio-0.0.0.0-9005-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-03-13 20:46:09.944   WARN 9236 --- [http-nio-0.0.0.0-9005-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2019-03-13 20:46:32.014  ERROR 9236 --- [http-nio-0.0.0.0-9005-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/library-service] threw exception [Request processing failed; nested exception is org.springframework.dao.EmptyResultDataAccessException: No class com.library.service.domain.LibraryEntity entity with id {2} exists!] with root cause
+
+org.springframework.dao.EmptyResultDataAccessException: No class com.library.service.domain.LibraryEntity entity with id {2} exists!
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.lambda$deleteById$0(SimpleJpaRepository.java:151) ~[spring-data-jpa-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at java.util.Optional.orElseThrow(Optional.java:290) ~[na:1.8.0_191]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById(SimpleJpaRepository.java:150) ~[spring-data-jpa-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at com.sun.proxy.$Proxy92.deleteById(Unknown Source) ~[na:na]
+	at com.library.service.service.LibraryService.removeBook(LibraryService.java:41) ~[classes/:na]
+	at com.library.service.controller.LibraryController.removeBook(LibraryController.java:36) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:899) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:667) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at com.library.service.config.CorsFilter.doFilter(CorsFilter.java:25) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at com.library.service.config.CorsFilter.doFilter(CorsFilter.java:25) ~[classes/:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2019-03-13 20:47:08.714   INFO 9236 --- [http-nio-0.0.0.0-9005-exec-6] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-13 20:49:58.307   INFO 4068 --- [main] c.library.service.LibraryServiceServer   : Starting LibraryServiceServer on DESKTOP-PR9J74M with PID 4068 (C:\Users\Gabi\Desktop\library-service\target\classes started by Gabi in C:\Users\Gabi\Desktop\library-service)
+2019-03-13 20:49:58.314   INFO 4068 --- [main] c.library.service.LibraryServiceServer   : No active profile set, falling back to default profiles: default
+2019-03-13 20:49:58.448   INFO 4068 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@778d1062: startup date [Wed Mar 13 20:49:58 EET 2019]; root of context hierarchy
+2019-03-13 20:50:01.687   INFO 4068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67c68ef0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-13 20:50:02.486   INFO 4068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9005 (http)
+2019-03-13 20:50:02.536   INFO 4068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-13 20:50:02.538   INFO 4068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-13 20:50:02.555   INFO 4068 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\PUTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;D:\Gozuri\apache-maven-3.6.0\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Gabi\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;.]
+2019-03-13 20:50:02.813   INFO 4068 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring embedded WebApplicationContext
+2019-03-13 20:50:02.814   INFO 4068 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4365 ms
+2019-03-13 20:50:03.399   INFO 4068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-13 20:50:03.401   INFO 4068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-13 20:50:03.402   INFO 4068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-13 20:50:03.403   INFO 4068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-13 20:50:03.405   INFO 4068 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-03-13 20:50:03.405   INFO 4068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2019-03-13 20:50:03.406   INFO 4068 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-13 20:50:03.709   INFO 4068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-13 20:50:04.079   INFO 4068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-13 20:50:04.160   INFO 4068 --- [main] o.f.core.internal.util.VersionPrinter    : Flyway Community Edition 5.0.7 by Boxfuse
+2019-03-13 20:50:04.178   INFO 4068 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost/library (MySQL 5.5)
+2019-03-13 20:50:04.348   INFO 4068 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.048s)
+2019-03-13 20:50:04.369   INFO 4068 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `library`: 1.0.0.1
+2019-03-13 20:50:04.371   INFO 4068 --- [main] o.f.core.internal.command.DbMigrate      : Schema `library` is up to date. No migration necessary.
+2019-03-13 20:50:04.471   INFO 4068 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-13 20:50:04.510   INFO 4068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-13 20:50:04.682   INFO 4068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-03-13 20:50:04.684   INFO 4068 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-03-13 20:50:04.750   INFO 4068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-13 20:50:05.009   INFO 4068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-03-13 20:50:05.875   INFO 4068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-13 20:50:06.803   INFO 4068 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a1015b51-1c6b-41e8-acd1-f42e3c90adb3
+
+2019-03-13 20:50:07.044   INFO 4068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ab4aa5e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4665428b, org.springframework.security.web.header.HeaderWriterFilter@a1691c0, org.springframework.security.web.authentication.logout.LogoutFilter@100aa331, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fd99443, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68a305eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b14b60a, com.library.service.config.CorsFilter@7756e64b, org.springframework.security.web.session.SessionManagementFilter@715fa8c5, org.springframework.security.web.access.ExceptionTranslationFilter@7cfb0c4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@697a0948]
+2019-03-13 20:50:07.217   INFO 4068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 20:50:07.493   INFO 4068 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@778d1062: startup date [Wed Mar 13 20:49:58 EET 2019]; root of context hierarchy
+2019-03-13 20:50:07.560   WARN 4068 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-13 20:50:07.622   INFO 4068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.library.service.dto.Book> com.library.service.controller.LibraryController.createBook(com.library.service.dto.Book)
+2019-03-13 20:50:07.625   INFO 4068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.library.service.dto.Book>> com.library.service.controller.LibraryController.getAllBooks()
+2019-03-13 20:50:07.626   INFO 4068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/book-delete/{id}],methods=[DELETE],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Boolean> com.library.service.controller.LibraryController.removeBook(java.lang.String)
+2019-03-13 20:50:07.632   INFO 4068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-13 20:50:07.633   INFO 4068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-13 20:50:07.673   INFO 4068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 20:50:07.674   INFO 4068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-13 20:50:08.097   INFO 4068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-13 20:50:08.099   INFO 4068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'hikariConfig' has been autodetected for JMX exposure
+2019-03-13 20:50:08.099   INFO 4068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-13 20:50:08.108   INFO 4068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'hikariConfig': registering with JMX server as MBean [com.zaxxer.hikari:name=hikariConfig,type=HikariConfig]
+2019-03-13 20:50:08.110   INFO 4068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-03-13 20:50:08.175   INFO 4068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9005 (http) with context path '/library-service'
+2019-03-13 20:50:08.181   INFO 4068 --- [main] c.library.service.LibraryServiceServer   : Started LibraryServiceServer in 10.856 seconds (JVM running for 12.012)
+2019-03-13 20:50:29.132   INFO 4068 --- [http-nio-0.0.0.0-9005-exec-2] o.a.c.c.C.[.[.[/library-service]         : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-13 20:50:29.133   INFO 4068 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-13 20:50:29.168   INFO 4068 --- [http-nio-0.0.0.0-9005-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
