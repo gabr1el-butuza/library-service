@@ -2,32 +2,45 @@ package com.library.service.domain;
 
 import com.library.service.dto.Book;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Lob;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Entity
 @Table(name = "book")
-public class LibraryEntity extends BaseEntity{
+public class LibraryEntity extends BaseEntity {
     @Column(nullable = false)
-    private String name;
+    private String title;
 
     @Lob
     private String description;
 
-    @Column(nullable = false)
-    private String author;
+    private Date lastModifiedOn;
 
-    @Column(nullable = false)
-    private String code;
+    @NotNull
+    private String categoryId;
 
-    @Column(name = "price")
-    private String price;
+//    @ManyToOne
+//    @JoinColumn(name = "categoryId")
+//    private CategoryEntity categoryId;
 
-    public String getName() {
-        return name;
+//    public LibraryEntity(String name, String description, Date lastModifiedOn, CategoryEntity notebookId) {
+//        this.name = name;
+//        this.description = description;
+//        this.lastModifiedOn = lastModifiedOn;
+//        this.notebookId = notebookId;
+//    }
+
+
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -38,38 +51,31 @@ public class LibraryEntity extends BaseEntity{
         this.description = description;
     }
 
-    public String getAuthor() {
-        return author;
+    public Date getLastModifiedOn() {
+        return lastModifiedOn;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setLastModifiedOn(Date lastModifiedOn) {
+        this.lastModifiedOn = lastModifiedOn;
     }
 
-    public String getCode() {
-        return code;
+    public String getCategoryId() {
+        return categoryId;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public static Book toBook(LibraryEntity libraryEntity){
+    //Converted from entity to book
+    public static Book toBook(LibraryEntity libraryEntity) {
         Book book = new Book();
 
-        book.setId(libraryEntity.getId());
-        book.setName(libraryEntity.getName());
+        book.setBookId(libraryEntity.getId());
+        book.setTitle(libraryEntity.getTitle());
         book.setDescription(libraryEntity.getDescription());
-        book.setAuthor(libraryEntity.getAuthor());
-        book.setPrice(libraryEntity.getPrice());
+        book.setLastModifiedOn(libraryEntity.getLastModifiedOn());
+        book.setCategoryId(libraryEntity.getCategoryId());
 
         return book;
     }

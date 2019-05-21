@@ -1,6 +1,6 @@
 package com.library.service.domain;
 
-import com.library.service.dto.FeedbackViewModel;
+import com.library.service.dto.Feedback;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -44,8 +44,8 @@ public class FeedbackEntity extends BaseEntity {
         this.feedback = feedback;
     }
 
-    public static FeedbackViewModel toFeedback(FeedbackEntity feedbackEntity){
-        FeedbackViewModel model = new FeedbackViewModel();
+    public static Feedback toFeedback(FeedbackEntity feedbackEntity){
+        Feedback model = new Feedback();
 
         model.setId(feedbackEntity.getId());
         model.setName(feedbackEntity.getName());

@@ -1,6 +1,6 @@
 package com.library.service.dto;
 
-public class FeedbackViewModel {
+public class Feedback {
     private String id;
 
     private String name;
