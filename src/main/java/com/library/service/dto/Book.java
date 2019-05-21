@@ -1,32 +1,32 @@
 package com.library.service.dto;
 
+import java.util.Date;
+
 public class Book {
     private String id;
 
-    private String name;
+    private String title;
 
     private String description;
 
-    private String author;
+    private Date lastModifiedOn;
 
-    private String code;
+    private String categoryId;
 
-    private String price;
-
-    public String getId() {
+    public String getBookId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setBookId(String id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -37,27 +37,19 @@ public class Book {
         this.description = description;
     }
 
-    public String getAuthor() {
-        return author;
+    public Date getLastModifiedOn() {
+        return lastModifiedOn;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setLastModifiedOn(Date lastModifiedOn) {
+        this.lastModifiedOn = lastModifiedOn;
     }
 
-    public String getCode() {
-        return code;
+    public String getCategoryId() {
+        return categoryId;
     }
 
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 }

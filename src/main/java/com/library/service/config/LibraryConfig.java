@@ -9,7 +9,8 @@ import org.springframework.context.annotation.Import;
         "com.library.service.api",
         "com.library.service.controller",
         "com.library.service.service",
-        "com.library.service.repository"
+        "com.library.service.repository",
+        "com.library.service.mail"
 })
 @Import({DbConfig.class, WebSecurityConfig.class})
 public class LibraryConfig {
