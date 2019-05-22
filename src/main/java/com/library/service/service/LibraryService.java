@@ -35,7 +35,7 @@ public class LibraryService {
         LibraryEntity libraryEntity = new LibraryEntity();
 
         libraryEntity.setTitle(book.getTitle());
-        libraryEntity.setDescription(book.getDescription());
+        libraryEntity.setText(book.getText());
         libraryEntity.setLastModifiedOn(book.getLastModifiedOn());
         libraryEntity.setCategoryId(book.getCategoryId());
 
@@ -48,8 +48,8 @@ public class LibraryService {
 
         categoryEntity.setName(category.getName());
 
-        CategoryEntity saveNotebook = categoryRepository.saveAndFlush(categoryEntity);
-        return toCategory(saveNotebook);
+        CategoryEntity saveCategory = categoryRepository.saveAndFlush(categoryEntity);
+        return toCategory(saveCategory);
     }
 
     public Feedback sendFeedback(Feedback feedback) {
@@ -98,24 +98,36 @@ public class LibraryService {
     }
 
     public Category updateCategory(String id, Category category) {
-        CategoryEntity note = categoryRepository.getOne(id);
-        if (note == null) {
+        CategoryEntity categ = categoryRepository.getOne(id);
+        if (categ == null) {
             throw new RuntimeException("Category with id could not be found.");
         }
-        note.setName(category.getName());
+        categ.setName(category.getName());
 
-        CategoryEntity updatedNote = categoryRepository.save(note);
-        return toCategory(updatedNote);
+        CategoryEntity updatedCateg = categoryRepository.save(categ);
+        return toCategory(updatedCateg);
     }
 
-//    public List<Book> getBooksByCategory(String id) {
-//        List<Book> items = new ArrayList<>();
-//
-//        List<LibraryEntity> book = libraryRepository.findAllByCategory(id);
-//
-//        for (LibraryEntity i : book) {
-//            items.add(toBook(i));
-//        }
-//        return items;
-//    }
+    public Book updateBook(String id, Book book) {
+        LibraryEntity bk = libraryRepository.getOne(id);
+        if (bk == null) {
+            throw new RuntimeException("Category with id could not be found.");
+        }
+        bk.setTitle(book.getTitle());
+        bk.setText(book.getText());
+
+        LibraryEntity updatedBook = libraryRepository.save(bk);
+        return toBook(updatedBook);
+    }
+
+    public List<Book> getBooksByCategory(String id) {
+        List<Book> items = new ArrayList<>();
+
+        List<LibraryEntity> book = libraryRepository.findAllByCategory(id);
+
+        for (LibraryEntity i : book) {
+            items.add(toBook(i));
+        }
+        return items;
+    }
 }

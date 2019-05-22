@@ -65,12 +65,19 @@ public class LibraryController implements LibraryApi {
 
     @Override
     public ResponseEntity<Category> updateCategory(@PathVariable("id") String id, @RequestBody Category body) {
-        Category updatedNote = libraryService.updateCategory(id,body);
-        return new ResponseEntity<>(updatedNote, HttpStatus.OK);
+        Category updatedCateg = libraryService.updateCategory(id, body);
+        return new ResponseEntity<>(updatedCateg, HttpStatus.OK);
     }
 
-//    public ResponseEntity<List<Book>> getBooksByCategory(@PathVariable("id") String id){
-//        List<Book> bookss = libraryService.getBooksByCategory(id);
-//        return new ResponseEntity<>(bookss, HttpStatus.OK);
-//    }
+    @Override
+    public ResponseEntity<Book> updateBook(@PathVariable("id") String id, @RequestBody Book body) {
+        Book updatedBook = libraryService.updateBook(id, body);
+        return new ResponseEntity<>(updatedBook, HttpStatus.OK);
+    }
+
+    public ResponseEntity<List<Book>> getBooksByCategory(@PathVariable("id") String id){
+        List<Book> bookss = libraryService.getBooksByCategory(id);
+        return new ResponseEntity<>(bookss, HttpStatus.OK);
+    }
+
 }
