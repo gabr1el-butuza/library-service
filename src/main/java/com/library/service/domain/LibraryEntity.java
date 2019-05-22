@@ -16,7 +16,7 @@ public class LibraryEntity extends BaseEntity {
     private String title;
 
     @Lob
-    private String description;
+    private String text;
 
     private Date lastModifiedOn;
 
@@ -43,12 +43,12 @@ public class LibraryEntity extends BaseEntity {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getText() {
+        return text;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public Date getLastModifiedOn() {
@@ -71,9 +71,9 @@ public class LibraryEntity extends BaseEntity {
     public static Book toBook(LibraryEntity libraryEntity) {
         Book book = new Book();
 
-        book.setBookId(libraryEntity.getId());
+        book.setId(libraryEntity.getId());
         book.setTitle(libraryEntity.getTitle());
-        book.setDescription(libraryEntity.getDescription());
+        book.setText(libraryEntity.getText());
         book.setLastModifiedOn(libraryEntity.getLastModifiedOn());
         book.setCategoryId(libraryEntity.getCategoryId());
 

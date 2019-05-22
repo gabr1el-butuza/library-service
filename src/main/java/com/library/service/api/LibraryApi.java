@@ -62,9 +62,15 @@ public interface LibraryApi {
             method = RequestMethod.PUT)
     ResponseEntity<Category> updateCategory(@PathVariable("id") String id, @RequestBody Category body);
 
-//    @RequestMapping(value = "/byCategory/{id}",
-//            produces = {"application/json"},
-//            //consumes = {"application/json"},
-//            method = RequestMethod.GET)
-//    ResponseEntity<List<Book>> getBooksByCategory(@PathVariable("id") String id);
+    @RequestMapping(value = "/book/{id}",
+            produces = {"application/json"},
+            consumes = {"application/json"},
+            method = RequestMethod.PUT)
+    ResponseEntity<Book> updateBook(@PathVariable("id") String id, @RequestBody Book body);
+
+    @RequestMapping(value = "/byCategory/{id}",
+            produces = {"application/json"},
+            //consumes = {"application/json"},
+            method = RequestMethod.GET)
+    ResponseEntity<List<Book>> getBooksByCategory(@PathVariable("id") String id);
 }

@@ -7,11 +7,11 @@ public class Category {
 
     private int nbOfBooks;
 
-    public String getCategoryId() {
+    public String getId() {
         return id;
     }
 
-    public void setCategoryId(String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
