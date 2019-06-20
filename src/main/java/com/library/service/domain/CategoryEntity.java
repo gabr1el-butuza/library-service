@@ -30,7 +30,7 @@ public class CategoryEntity extends BaseEntity {
     }
 
     public int getNbOfBooks() {
-        return nbOfBooks;
+        return nbOfBooks + 1;
     }
 
     public void setNbOfBooks(int nbOfBooks) {
@@ -40,7 +40,7 @@ public class CategoryEntity extends BaseEntity {
     public static Category toCategory(CategoryEntity categoryEntity) {
         Category category = new Category();
 
-        category.setCategoryId(categoryEntity.getId());
+        category.setId(categoryEntity.getId());
         category.setName(categoryEntity.getName());
         category.setNbOfBooks(categoryEntity.getNbOfBooks());
 

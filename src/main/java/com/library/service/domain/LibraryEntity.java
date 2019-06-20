@@ -2,10 +2,7 @@ package com.library.service.domain;
 
 import com.library.service.dto.Book;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Lob;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
@@ -16,23 +13,25 @@ public class LibraryEntity extends BaseEntity {
     private String title;
 
     @Lob
-    private String description;
+    private String text;
 
     private Date lastModifiedOn;
+
+//    @Column(name="book_path")
+//    private String bookPath;
 
     @NotNull
     private String categoryId;
 
-//    @ManyToOne
-//    @JoinColumn(name = "categoryId")
-//    private CategoryEntity categoryId;
+    @PrePersist
+    protected void onCreate() {
+        lastModifiedOn = new Date();
+    }
 
-//    public LibraryEntity(String name, String description, Date lastModifiedOn, CategoryEntity notebookId) {
-//        this.name = name;
-//        this.description = description;
-//        this.lastModifiedOn = lastModifiedOn;
-//        this.notebookId = notebookId;
-//    }
+    @PreUpdate
+    protected void onUpdate() {
+        lastModifiedOn = new Date();
+    }
 
 
     public String getTitle() {
@@ -43,12 +42,12 @@ public class LibraryEntity extends BaseEntity {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getText() {
+        return text;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public Date getLastModifiedOn() {
@@ -71,9 +70,9 @@ public class LibraryEntity extends BaseEntity {
     public static Book toBook(LibraryEntity libraryEntity) {
         Book book = new Book();
 
-        book.setBookId(libraryEntity.getId());
+        book.setId(libraryEntity.getId());
         book.setTitle(libraryEntity.getTitle());
-        book.setDescription(libraryEntity.getDescription());
+        book.setText(libraryEntity.getText());
         book.setLastModifiedOn(libraryEntity.getLastModifiedOn());
         book.setCategoryId(libraryEntity.getCategoryId());
 

@@ -7,17 +7,21 @@ public class Book {
 
     private String title;
 
-    private String description;
+    private String text;
 
     private Date lastModifiedOn;
 
+
+
     private String categoryId;
 
-    public String getBookId() {
+
+
+    public String getId() {
         return id;
     }
 
-    public void setBookId(String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -29,12 +33,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getText() {
+        return text;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public Date getLastModifiedOn() {

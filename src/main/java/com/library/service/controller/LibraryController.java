@@ -4,6 +4,7 @@ import com.library.service.api.LibraryApi;
 import com.library.service.dto.Book;
 import com.library.service.dto.Category;
 import com.library.service.dto.Feedback;
+import com.library.service.dto.User;
 import com.library.service.service.LibraryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -58,6 +59,12 @@ public class LibraryController implements LibraryApi {
     }
 
     @Override
+    public ResponseEntity<List<User>> getAllUsers() {
+        List<User> allusers= libraryService.getAllUsers();
+        return new ResponseEntity<>(allusers, HttpStatus.OK);
+    }
+
+    @Override
     public ResponseEntity<Category> createCategory(@RequestBody Category body){
         Category notebookmodel = libraryService.createCategory(body);
         return new ResponseEntity<>(notebookmodel, HttpStatus.CREATED);
@@ -65,12 +72,26 @@ public class LibraryController implements LibraryApi {
 
     @Override
     public ResponseEntity<Category> updateCategory(@PathVariable("id") String id, @RequestBody Category body) {
-        Category updatedNote = libraryService.updateCategory(id,body);
-        return new ResponseEntity<>(updatedNote, HttpStatus.OK);
+        Category updatedCateg = libraryService.updateCategory(id, body);
+        return new ResponseEntity<>(updatedCateg, HttpStatus.OK);
     }
 
-//    public ResponseEntity<List<Book>> getBooksByCategory(@PathVariable("id") String id){
-//        List<Book> bookss = libraryService.getBooksByCategory(id);
-//        return new ResponseEntity<>(bookss, HttpStatus.OK);
-//    }
+    @Override
+    public ResponseEntity<Book> updateBook(@PathVariable("id") String id, @RequestBody Book body) {
+        Book updatedBook = libraryService.updateBook(id, body);
+        return new ResponseEntity<>(updatedBook, HttpStatus.OK);
+    }
+
+    public ResponseEntity<List<Book>> getBooksByCategory(@PathVariable("id") String id){
+        List<Book> bookss = libraryService.getBooksByCategory(id);
+        return new ResponseEntity<>(bookss, HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<User> createUser(@RequestBody User body) {
+        User user = libraryService.createUser(body);
+        return new ResponseEntity<>(user, HttpStatus.CREATED);
+
+    }
+
 }
