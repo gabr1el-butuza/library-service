@@ -17,8 +17,8 @@ public class LibraryEntity extends BaseEntity {
 
     private Date lastModifiedOn;
 
-//    @Column(name="book_path")
-//    private String bookPath;
+    @Column(name="bookPath")
+    private String bookPath;
 
     @NotNull
     private String categoryId;
@@ -58,6 +58,14 @@ public class LibraryEntity extends BaseEntity {
         this.lastModifiedOn = lastModifiedOn;
     }
 
+    public String getBookPath() {
+        return bookPath;
+    }
+
+    public void setBookPath(String bookPath) {
+        this.bookPath = bookPath;
+    }
+
     public String getCategoryId() {
         return categoryId;
     }
@@ -74,6 +82,7 @@ public class LibraryEntity extends BaseEntity {
         book.setTitle(libraryEntity.getTitle());
         book.setText(libraryEntity.getText());
         book.setLastModifiedOn(libraryEntity.getLastModifiedOn());
+        book.setBookPath(libraryEntity.getBookPath());
         book.setCategoryId(libraryEntity.getCategoryId());
 
         return book;

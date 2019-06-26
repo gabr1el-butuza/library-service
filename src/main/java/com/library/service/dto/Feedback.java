@@ -5,7 +5,7 @@ public class Feedback {
 
     private String name;
 
-    private String email;
+    private String mail;
 
     private String feedback;
 
@@ -26,11 +26,11 @@ public class Feedback {
     }
 
     public String getEmail() {
-        return email;
+        return mail;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.mail = mail;
     }
 
     public String getFeedback() {

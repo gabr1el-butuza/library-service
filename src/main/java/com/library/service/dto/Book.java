@@ -11,7 +11,7 @@ public class Book {
 
     private Date lastModifiedOn;
 
-
+    private String bookPath;
 
     private String categoryId;
 
@@ -47,6 +47,14 @@ public class Book {
 
     public void setLastModifiedOn(Date lastModifiedOn) {
         this.lastModifiedOn = lastModifiedOn;
+    }
+
+    public String getBookPath() {
+        return bookPath;
+    }
+
+    public void setBookPath(String bookPath) {
+        this.bookPath = bookPath;
     }
 
     public String getCategoryId() {

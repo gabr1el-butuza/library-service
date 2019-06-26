@@ -46,6 +46,7 @@ public class LibraryService {
         libraryEntity.setTitle(book.getTitle());
         libraryEntity.setText(book.getText());
         libraryEntity.setLastModifiedOn(book.getLastModifiedOn());
+        libraryEntity.setBookPath(book.getBookPath());
         libraryEntity.setCategoryId(book.getCategoryId());
 
         LibraryEntity savedBook = libraryRepository.saveAndFlush(libraryEntity);
@@ -145,10 +146,11 @@ public class LibraryService {
     public Book updateBook(String id, Book book) {
         LibraryEntity bk = libraryRepository.getOne(id);
         if (bk == null) {
-            throw new RuntimeException("Category with id could not be found.");
+            throw new RuntimeException("Book with id could not be found.");
         }
         bk.setTitle(book.getTitle());
         bk.setText(book.getText());
+        bk.setBookPath(book.getBookPath());
 
         LibraryEntity updatedBook = libraryRepository.save(bk);
         return toBook(updatedBook);

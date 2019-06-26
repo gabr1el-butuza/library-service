@@ -19,6 +19,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.access.channel.ChannelProcessingFilter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -48,11 +49,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new JwtTokenProvider();
     }
 
-//    @Bean
-//    CorsFilter corsFilter() {
-//        CorsFilter filter = new CorsFilter();
-//        return filter;
-//    }
 
     @Bean
     public AuthenticationProvider userAuthenticationProvider() {
@@ -93,11 +89,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return source;
     }
 
+//    @Bean
+//    CorsFilter corsFilter() {
+//        CorsFilter filter = new CorsFilter();
+//        return filter;
+//    }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .cors()
-                .and()
+//                .cors()
+//                .and()
+                .addFilterBefore(new CorsFilter(), ChannelProcessingFilter.class)
                 .csrf()
                 .disable()
                 .exceptionHandling()
@@ -120,11 +123,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers("/swagger-resources/**", "/v2/api-docs", "/webjars/springfox-swagger-ui/**")
                 .permitAll()
-                .antMatchers(HttpMethod.GET, "/books", "/categories", "/users", "/byCategory/**")
+                .antMatchers(HttpMethod.GET, "/books", "/categories", "/users", "/byCategory/**", "/files/**")
                 .permitAll()
-                .antMatchers(HttpMethod.POST,  "/auth/login", "/user")
+                .antMatchers(HttpMethod.POST,  "/auth/login", "/user", "/file")
                 .permitAll()
-                .antMatchers(HttpMethod.PUT, "/users", "/companies")
+                .antMatchers(HttpMethod.PUT, "/users")
                 .permitAll()
                 .anyRequest()
                 .authenticated();

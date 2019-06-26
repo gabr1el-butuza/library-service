@@ -13,9 +13,8 @@ public class FeedbackEntity extends BaseEntity {
     @NotNull
     private String name;
 
-    @NotNull
     @Email
-    private String email;
+    private String mail;
 
     @NotNull
     private String feedback;
@@ -29,11 +28,11 @@ public class FeedbackEntity extends BaseEntity {
     }
 
     public String getEmail() {
-        return email;
+        return mail;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.mail = mail;
     }
 
     public String getFeedback() {
